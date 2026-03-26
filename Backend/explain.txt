@@ -1,0 +1,10 @@
+dsa-agent/
+├── backend/
+│   ├── main.py              # FastAPI app entry point
+│   ├── agent.py             # Claude agent with tool-use loop
+│   ├── scraper.py           # Web scraping tool (LeetCode + Codeforces)
+│   ├── models.py            # Pydantic request/response schemas
+│   ├── prompts.py           # All Claude system prompts
+│   └── requirements.txt     # Python dependencies
+│
+└── frontend/                # (later — Next.js)
