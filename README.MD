@@ -1,6 +1,6 @@
 <div align="center">
   <a href="#">
-    <img src="https://raw.githubusercontent.com/user-attachments/assets/15ba7457-422f-4594-9189-912f204362a2/logo.png" alt="DSA Agent Logo" width="120">
+    <img src="https://imgs.search.brave.com/LyLRda4NTMOT07Fv41hbIWJZO59KH6xUa0HKGfJLpQ0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nb2FpLmNvbS91/cGxvYWRzL2ljb24v/MjAyMS8wOS8yNi8w/NDQ3Yjk1My1hMjUx/LTRhMGItODhjNi01/NDQ0ZWFjYWJhYzgu/cG5n" alt="DSA Agent Logo" width="120">
   </a>
 
   <h1 align="center">
@@ -10,11 +10,10 @@
   <p align="center">
     Your AI-Powered Competitive Programming Companion 🚀
     <br />
-    <a href="#demo">View Demo</a>
     ·
-    <a href="https://github.com/your-username/dsa-agent/issues">Report Bug</a>
+    <a href="https://github.com/Dumbsham/dsa-agent/issues">Report Bug</a>
     ·
-    <a href="https://github.com/your-username/dsa-agent/issues">Request Feature</a>
+    <a href="https://github.com/Dumbsham/dsa-agent/issues">Request Feature</a>
   </p>
 </div>
 
@@ -280,7 +279,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 A passionate developer building bridges between complex technology and human-centric design.
 
 <div align="center">
-  <a href="https://github.com/sakshxm" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/saksham-gairola/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://twitter.com/sakshamgairola" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>
+  <a href="https://github.com/Dumbsham" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/saksham14sharma/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://twitter.com/Dumbsham" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>
 </div>
