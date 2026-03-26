@@ -20,8 +20,6 @@
 <div align="center">
 
 ![Tech Stack](https://img.shields.io/badge/Tech-Next.js%20%7C%20FastAPI%20%7C%20Gemini-blueviolet?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![License](https://img.shields.io/github/license/your-username/dsa-agent?style=for-the-badge)
 
 </div>
 
