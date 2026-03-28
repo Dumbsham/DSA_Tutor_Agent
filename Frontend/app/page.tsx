@@ -7,6 +7,7 @@ import ProblemInput from "./components/ProblemInput";
 import ComplexityCard from "./components/ComplexityCard";
 import CodeViewer from "./components/CodeViewer";
 import ChatPanel, { Message } from "./components/ChatPanel";
+import FloatingLines from "./components/FloatingLines"; // Ensure this path matches where you saved the file!
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
@@ -83,8 +84,25 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-zinc-100 p-4 md:p-8 lg:p-12 font-sans selection:bg-purple-500/30">
-      <div className="max-w-7xl mx-auto space-y-12">
+    <main className="relative min-h-screen bg-zinc-950 text-zinc-100 font-sans selection:bg-purple-500/30 overflow-hidden">
+      
+      {/* 🌌 THE ANIMATED BACKGROUND 🌌 */}
+      <div className="absolute inset-0 z-0">
+        <FloatingLines 
+          enabledWaves={["top", "middle", "bottom"]}
+          lineCount={14}
+          lineDistance={5}
+          bendRadius={5}
+          bendStrength={-0.5}
+          interactive={true}
+          parallax={true}
+        />
+        {/* Dark gradient overlay to ensure text remains readable. pointer-events-none lets the mouse pass through to the animation! */}
+        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/40 via-zinc-950/80 to-zinc-950 pointer-events-none"></div>
+      </div>
+
+      {/* 🚀 THE FOREGROUND CONTENT 🚀 */}
+      <div className="relative z-10 p-4 md:p-8 lg:p-12 max-w-7xl mx-auto space-y-12">
         
         {/* Header Section */}
         <motion.div 
@@ -92,13 +110,13 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center space-y-4 pt-8"
         >
-          <div className="inline-flex items-center justify-center p-4 bg-zinc-900 border border-zinc-800 rounded-2xl shadow-2xl mb-2">
+          <div className="inline-flex items-center justify-center p-4 bg-zinc-900 border border-zinc-800 rounded-2xl shadow-2xl mb-2 backdrop-blur-md bg-opacity-80">
             <BrainCircuit className="text-purple-500" size={36} />
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 text-transparent bg-clip-text">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 text-transparent bg-clip-text drop-shadow-lg">
             DSA Agent & Tutor
           </h1>
-          <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
+          <p className="text-zinc-400 max-w-2xl mx-auto text-lg drop-shadow-md">
             Paste a LeetCode or Codeforces URL. The AI will write an optimized C++ solution, analyze complexity, and tutor you through the approach.
           </p>
         </motion.div>
@@ -115,7 +133,7 @@ export default function Home() {
           >
             {/* Left Column: Problem Details, Complexity, and Code */}
             <div className="lg:col-span-7 space-y-8">
-              <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-xl relative overflow-hidden">
+              <div className="bg-zinc-900/90 backdrop-blur-sm border border-zinc-800 rounded-xl p-6 shadow-xl relative overflow-hidden">
                  <div className="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
                  <h2 className="text-2xl font-bold mb-4 text-zinc-100">{problemData.problem_title}</h2>
                  {/* Quick scrollable area for the problem description */}
