@@ -90,8 +90,8 @@ export default function Home() {
       <div className="absolute inset-0 z-0">
         <FloatingLines 
           enabledWaves={["top", "middle", "bottom"]}
-          lineCount={14}
-          lineDistance={5}
+          lineCount={[14, 14, 14]}   
+          lineDistance={[5, 5, 5]}   
           bendRadius={5}
           bendStrength={-0.5}
           interactive={true}
