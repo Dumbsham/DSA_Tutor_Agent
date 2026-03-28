@@ -22,7 +22,7 @@ export default function Home() {
     setMessages([]);
 
     try {
-      const res = await fetch("http://localhost:8000/solve", {
+      const res = await fetch("https://dsa-tutor-agent.onrender.com/solve", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
@@ -58,7 +58,7 @@ export default function Home() {
     setIsChatLoading(true);
 
     try {
-      const res = await fetch("http://localhost:8000/chat", {
+      const res = await fetch("https://dsa-tutor-agent.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
