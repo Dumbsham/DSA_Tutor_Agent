@@ -96,6 +96,9 @@ export default function Home() {
           bendStrength={-0.5}
           interactive={true}
           parallax={true}
+          linesGradient={["#8b5cf6", "#3b82f6"]} 
+          topWavePosition="20%"
+          middleWavePosition="50%"
         />
         {/* Dark gradient overlay to ensure text remains readable. pointer-events-none lets the mouse pass through to the animation! */}
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/40 via-zinc-950/80 to-zinc-950 pointer-events-none"></div>
